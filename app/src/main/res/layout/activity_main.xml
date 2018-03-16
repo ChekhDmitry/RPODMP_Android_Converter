@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chekh.rpodmp_lab_1.MainActivity">
+
+    <EditText
+        android:id="@+id/dollarEditText"
+        android:layout_width="158dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="7"
+        android:numeric="integer"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/dollarLableTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dollarLableTextView"
+        android:layout_width="86dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="28dp"
+        android:text="USA dollar:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/belRubleTextView"
+        android:layout_width="89dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="23dp"
+        android:text="Bel. ruble:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/rusRubeTextView"
+        android:layout_width="91dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
+        android:text="Rus. ruble:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/euroLableTextView" />
+
+    <TextView
+        android:id="@+id/euroLableTextView"
+        android:layout_width="89dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
+        android:text="Euro:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/belRubleTextView" />
+
+    <TextView
+        android:id="@+id/belRubleResultTextView"
+        android:layout_width="163dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="23dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/belRubleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/euroResultTextView"
+        android:layout_width="164dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/euroLableTextView"
+        app:layout_constraintTop_toBottomOf="@+id/belRubleResultTextView" />
+
+    <TextView
+        android:id="@+id/rusRubleResultTextView"
+        android:layout_width="162dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="18dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/rusRubeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/euroResultTextView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="263dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="14dp"
+        android:onClick="onConvertBtnClick"
+        android:text="Convert currency"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dollarLableTextView" />
+
+</android.support.constraint.ConstraintLayout>
